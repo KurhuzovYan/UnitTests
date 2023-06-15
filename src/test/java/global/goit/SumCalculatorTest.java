@@ -9,7 +9,7 @@ public class SumCalculatorTest {
     private SumCalculator calculator;
 
     @BeforeEach
-    public void beforeEach() {
+    public void init() {
         calculator = new SumCalculator();
     }
 
@@ -30,7 +30,6 @@ public class SumCalculatorTest {
     @Test
     public void testThatSumThrowIllegalArgumentException() {
         int actual = calculator.sum(0);
-
         Assertions.assertThrows(IllegalArgumentException.class, () -> {
             if (actual == 0) {
                 throw new IllegalArgumentException("You entered 0, this method works only with numbers greater than 0");
