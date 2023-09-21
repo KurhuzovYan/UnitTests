@@ -23,7 +23,7 @@ public class SumCalculatorTest {
     @Test
     public void testThatSumReturnSix() {
         int actual = calculator.sum(3);
-        int expected = 60;
+        int expected = 6;
         Assertions.assertEquals(expected, actual);
     }
 
